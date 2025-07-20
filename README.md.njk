@@ -1,4 +1,28 @@
-# React + TypeScript + Vite
+# {{ project_name }}
+
+By {{ author_name }}
+
+{% if include_testing %}A React + TypeScript + Vite project with testing setup.{% else %}A React + TypeScript + Vite project.{% endif %}
+
+## Features
+
+- ⚡ **Vite** for fast development
+- 🔧 **TypeScript** support
+- 🎨 **{{ styling_framework|title }}** for styling{% if include_testing %}
+- 🧪 **Jest** testing setup{% endif %}{% for feature in additional_features %}
+- ✨ **{{ feature|replace("_", " ")|title }}** included{% endfor %}
+
+## Development
+
+Start the development server on port {{ port_number }}:
+
+```bash
+npm run dev
+```
+
+## Deployment
+
+This project is configured for deployment on **{{ deployment_target|title }}**.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
