@@ -1,0 +1,23 @@
+name: "React TypeScript Template"
+description: "A modern React app with TypeScript, Vite, and ESLint"
+questions:
+  - name: "project_name"
+    type: "input"
+    message: "What's your project name?"
+    default: "my-react-app"
+  - name: "project_description"
+    type: "input"
+    message: "Project description?"
+    default: "A React TypeScript application"
+  - name: "author_name"
+    type: "input"
+    message: "Author name?"
+    default: "Developer"
+  - name: "include_testing"
+    type: "confirm"
+    message: "Include testing setup (Jest/React Testing Library)?"
+    default: true
+  - name: "use_router"
+    type: "confirm"
+    message: "Include React Router?"
+    default: false
